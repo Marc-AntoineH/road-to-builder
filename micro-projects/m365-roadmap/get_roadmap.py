@@ -32,7 +32,7 @@ def filter_and_print_and_save(data, target_date, output_csv):
 
 # Load JSON from file and process it
 file_path = "data.json"  # Change this to the actual file path
-target_date = "March CY2025"  # Modify this variable as needed
+target_date = "April CY2025"  # Modify this variable as needed
 output_csv = "filtered_data.csv"  # Output CSV file
 
 data = load_json(file_path)
