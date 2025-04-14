@@ -19,20 +19,38 @@ $AdvancedRule = $Rule.AdvancedRule
 $AdvancedRule > AdvancedRule.json
 
 
-# Lister les SITs, filtrer sur ceux créer par l'organisation
+# Lister les SITs, filtrer sur ceux creer par l'organisation
 Get-DlpSensitiveInformationType
 Get-DlpSensitiveInformationType | Where-Object { $_.Publisher -eq "K-laboratory" }
 Get-DlpSensitiveInformationType -Identity "NAS by DataShieldDivine"
 
 
 # Update DLP rule
-$Data = Get-Content -Path "C:\Users\marc-antoinehebert\Downloads\road-to-builder\micro-projects\purview\DLP\Rule\AdvancedRule\Canada PII\ExternalShare.json" -ReadCount 0
+$Data = Get-Content `
+    -Path "C:\Users\marc-antoinehebert\Downloads\road-to-builder\micro-projects\purview\DLP\Rule\AdvancedRule\Canada PII\ExternalShare.json" `
+    -ReadCount 0
 $String = $Data | Out-string
-Set-DLPComplianceRule -Identity "ExternalShare" -AdvancedRule $String
+Set-DLPComplianceRule -Identity "ExternalShare" `
+    -AdvancedRule $String
 
 
-# Créer une nouvelle DLP rule
-$Data = Get-Content -Path "C:\Users\marc-antoinehebert\Downloads\road-to-builder\micro-projects\purview\DLP\Rule\AdvancedRule\Canada PII\ExternalShare.json" -ReadCount 0
+
+
+
+# Creer une nouvelle DLP policy
+New-DlpCompliancePolicy -Name "Canada PII" `
+    -Mode TestWithoutNotifications `
+    -ExchangeLocation All `
+    -SharePointLocation All `
+    -OneDriveLocation All `
+    -TeamsLocation All
+
+
+# Creer une nouvelle DLP rule
+$Data = Get-Content `
+    -Path "C:\Users\marc-antoinehebert\Downloads\road-to-builder\micro-projects\purview\DLP\Rule\AdvancedRule\Canada PII\ExternalShare.json" `
+    -ReadCount 0
 $String = $Data | Out-string
-New-DLPComplianceRule -Name "Nouvelle Rule" -Policy "Canada PII" -AdvancedRule $String
-
+New-DLPComplianceRule -Name "ExternalShare" `
+    -Policy "Canada PII" `
+    -AdvancedRule $String
