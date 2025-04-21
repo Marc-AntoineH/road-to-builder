@@ -25,3 +25,6 @@ function Build-PolicyParameters {
     
     return $policyParams
 }
+
+
+### REFACTOR

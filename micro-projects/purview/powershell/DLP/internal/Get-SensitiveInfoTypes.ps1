@@ -100,3 +100,6 @@ function Get-SensitiveInfoTypes {
     
     return $result
 }
+
+
+### REFACTOR

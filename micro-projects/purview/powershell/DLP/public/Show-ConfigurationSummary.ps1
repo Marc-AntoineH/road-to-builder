@@ -49,3 +49,6 @@ function Show-ConfigurationSummary {
     Write-Host "- Bloquer l'accès: $($Actions.BlockAccess)"
     Write-Host "- Notifier les utilisateurs: $($Actions.NotifyUser)"
 }
+
+
+### REFACTOR

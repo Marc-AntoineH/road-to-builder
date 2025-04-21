@@ -12,4 +12,7 @@ function Connect-ToExchangeOnline {
         Write-Host "Erreur de connexion: $_" -ForegroundColor Red
     }
 }
-Connect-ToExchangeOnline
+
+
+
+### REFACTOR

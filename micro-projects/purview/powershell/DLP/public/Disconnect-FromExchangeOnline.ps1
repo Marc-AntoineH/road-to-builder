@@ -12,4 +12,6 @@ function Disconnect-FromExchangeOnline {
         Write-Host "Erreur lors de la déconnexion: $_" -ForegroundColor Red
     }
 }
-Disconnect-FromExchangeOnline
+
+
+### REFACTOR

@@ -13,3 +13,6 @@ function Get-PolicyLocations {
     
     return $locations
 }
+
+
+### REFACTOR

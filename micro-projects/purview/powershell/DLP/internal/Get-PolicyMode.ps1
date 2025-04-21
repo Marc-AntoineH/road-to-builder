@@ -14,3 +14,6 @@ function Get-PolicyMode {
     
     return $modeOptions[$modeIndex]
 }
+
+
+### REFACTOR

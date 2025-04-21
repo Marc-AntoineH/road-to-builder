@@ -54,3 +54,6 @@ function Build-RuleParameters {
     
     return $ruleParams
 }
+
+
+### REFACTOR

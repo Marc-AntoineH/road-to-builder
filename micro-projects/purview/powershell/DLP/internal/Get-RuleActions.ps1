@@ -10,3 +10,6 @@ function Get-RuleActions {
     
     return $actions
 }
+
+
+### REFACTOR

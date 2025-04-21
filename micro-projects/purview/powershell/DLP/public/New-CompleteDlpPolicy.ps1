@@ -23,3 +23,6 @@ function New-CompleteDlpPolicy {
     # Déployer la politique
     Deploy-DlpPolicy -PolicyParameters $policyParams -RuleParameters $ruleParams
 }
+
+
+### REFACTOR
