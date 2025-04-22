@@ -16,13 +16,14 @@ Why? – Quel est le but final ou l’intention derrière cette action ?
 [Who], en tant que [rôle/persona], doit [What] à [To Whom], à propos de [About What], en le faisant [How], afin de [Why].
 
 
-Élément | Variable du template | Exemple (cybersécurité)
-Who | [rôle/persona] | un expert en cybersécurité
-What | [action] | expliquer
-To Whom | [public cible / à qui ?] | un patron de PME dans le design graphique
-About What | [sujet / de quoi ?] | une attaque de phishing par lien malveillant
-How | [comment ? / style / structure] | en suivant une structure : scénario, conséquences, analyse, leçon
-Why | [objectif final / pourquoi ?] | pour sensibiliser aux risques et souligner l’importance du MFA
+| Élément      | Détail                        | Description                                                                 |
+|--------------|-------------------------------|-----------------------------------------------------------------------------|
+| Who          | [rôle/persona]                | un expert en cybersécurité                                                  |
+| What         | [action]                      | expliquer                                                                   |
+| To Whom      | [public cible / à qui ?]      | un patron de PME dans le design graphique                                   |
+| About What   | [sujet / de quoi ?]           | une attaque de phishing par lien malveillant                                |
+| How          | [comment ? / style / structure]| en suivant une structure : scénario, conséquences, analyse, leçon           |
+| Why          | [objectif final / pourquoi ?] | pour sensibiliser aux risques et souligner l’importance du MFA             |
 
 
 **Prompt final**
